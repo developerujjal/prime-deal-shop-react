@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import './Cart.css'
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, handleRemoveBtn }) => {
     return (
         <div className='carts-container'>
             <div className='table-wrapper'>
@@ -21,7 +21,7 @@ const Cart = ({ cart }) => {
                                     <td>{index + 1}</td>
                                     <td>{iteam.title.slice(0, 10)}</td>
                                     <td>${iteam.price}</td>
-                                    <td><button>Delete</button></td>
+                                    <td><button onClick={()=> handleRemoveBtn(iteam.id)}>Delete</button></td>
                                 </tr>
                             ))
                         }
@@ -33,7 +33,8 @@ const Cart = ({ cart }) => {
 };
 
 Cart.propTypes = {
-    cart: PropTypes.array.isRequired
+    cart: PropTypes.array.isRequired,
+    handleRemoveBtn: PropTypes.func.isRequired
 }
 
 

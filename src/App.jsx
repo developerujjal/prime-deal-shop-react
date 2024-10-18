@@ -21,6 +21,13 @@ function App() {
   }
 
 
+  const handleRemoveBtn = (id)=> {
+    const newCart = cart.filter((element)=> element.id !== id)
+    setCart(newCart)
+  }
+
+
+
   return (
     <>
       <Header></Header>
@@ -28,7 +35,7 @@ function App() {
         <div className='container'>
           <div className='main-product-and-cart'>
           <Products handleCartBtn={handleCartBtn}></Products>
-          <Cart cart={cart}></Cart>
+          <Cart cart={cart} handleRemoveBtn={handleRemoveBtn}></Cart>
           </div>
         </div>
       </main>
