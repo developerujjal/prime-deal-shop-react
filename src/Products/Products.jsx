@@ -8,7 +8,7 @@ const Products = ({handleCartBtn}) => {
     const [products, setProducts]= useState([])
 
     useEffect(()=>{
-        fetch('../../public/fakeDatas.json')
+        fetch('fakeDatas.json')
         .then(res => res.json())
         .then(data => setProducts(data))
     },[])
