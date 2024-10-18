@@ -1,0 +1,23 @@
+
+body {
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.6;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 95%; /* Maximum width is 90% of the parent element */
+  margin: 0 auto; /* Center the container */
+  padding: 0 15px; /* Add some padding */
+}

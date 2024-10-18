@@ -1,0 +1,26 @@
+.main-product-and-cart{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 14px;
+    gap: 50px;
+}
+
+@media screen and (max-width:639px){
+    .main-product-and-cart{
+        flex-direction: column-reverse;
+        /* padding: 30px 0px; */
+    }
+
+    .products-container{
+        width: 100% !important;
+        flex-direction: column;
+    }
+
+    .carts-container{
+        width: 100% !important;
+    }
+
+    .carts-main{
+        width: 100% !important;
+    }
+}

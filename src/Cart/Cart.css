@@ -1,0 +1,45 @@
+.carts-container{
+    width: 27%;
+}
+
+.table-title {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #ddd;
+}
+
+table.table {
+    width: 100%;
+}
+
+tr.table-title td {
+    font-size: 1.08rem;
+    font-weight: 700;
+}
+
+.table-wrapper {
+    width: 100%;
+    padding: 15px;
+    background-color: #F8F8F8;
+}
+
+tbody.tbody-main tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0px 2px 0px;
+}
+
+.table-title th:nth-child(2) {
+    width: 20%;
+}
+
+tbody.tbody-main tr:last-child {
+    padding-bottom: 14px;
+}
+
+tbody.tbody-main tr td {
+    color: #686B72;
+    font-size: 1.09rem;
+}
